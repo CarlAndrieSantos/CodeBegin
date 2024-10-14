@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tutor1.css">
+    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
+    <title>Tutors</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+           <div class="logo">CodeBegin</div>
+        <nav>
+            <ul>
+                <li><a href="../Homepage/home.html">Home</a></li>
+                <li><a href="course.html" >Courses</a></li>
+                <li class="courses"><a href="tutor.html">Tutors</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="/Loginsignup/login1.php">Login/Sign up</a></li>
+            </ul>
+        </nav> 
+        </div>
+    </header>
+
+    <section class="tutors-section">
+        <!-- Page Heading -->
+        <header>
+            <h1>Meet Our Expert Web Development Tutors</h1>
+            <p>Learn from experienced web developers who are passionate about teaching.</p>
+        </header>
+    
+        <!-- Featured Tutors Section -->
+        <section class="featured-tutors">
+            <h2>Featured Tutors</h2>
+            
+            <div class="tutor">
+                <img src="teacher.png" alt="John Doe">
+                <div class="tutor-info">
+                    <h3>Juan Dela Cruz (Frontend Development)</h3>
+                    <p>Juan has over 10 years of experience in web development, specializing in HTML, CSS, and JavaScript. He’s worked on numerous large-scale projects and loves helping beginners understand the basics of web design.</p>
+                    <p><strong>Expertise:</strong> HTML, CSS, JavaScript, React</p>
+                    <p><strong>Rating:</strong> ★★★★★ (4.9/5 from 50 reviews)</p>
+                    <button>Book a Session</button>
+                </div>
+            </div>
+    
+            <div class="tutor">
+                <img src="teacher (1).png" alt="Jane Smith">
+                <div class="tutor-info">
+                    <h3>Ana Santos (Backend Development)</h3>
+                    <p>Ana is a full-stack developer with a focus on backend technologies like Node.js and databases. She has helped countless students develop their skills and successfully build robust web applications.</p>
+                    <p><strong>Expertise:</strong> Node.js, MongoDB, API Development</p>
+                    <p><strong>Rating:</strong> ★★★★★ (4.8/5 from 40 reviews)</p>
+                    <button>Book a Session</button>
+                </div>
+            </div>
+    
+            <div class="tutor">
+                <img src="teacher.png" alt="David Lee">
+                <div class="tutor-info">
+                    <h3>Pedro Morales (Full Stack Development)</h3>
+                    <p>Pedro brings 8 years of experience in full-stack development, with expertise in both frontend and backend technologies. His teaching method focuses on practical, hands-on learning.</p>
+                    <p><strong>Expertise:</strong> Full Stack Development, MERN Stack</p>
+                    <p><strong>Rating:</strong> ★★★★★ (4.9/5 from 30 reviews)</p>
+                    <button>Book a Session</button>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Browse All Tutors Section -->
+        <section class="browse-tutors">
+            <h2>Browse All Tutors</h2>
+            <!-- Filters (optional) -->
+             
+            <form class="filters">
+                <label for="specialization">Specialization:</label>
+                <select id="specialization">
+                    <option value="" selected disabled style="color: rgb(107, 107, 107);">Select Specialization</option>
+                    <option value="frontend">Frontend Development</option>
+                    <option value="backend">Backend Development</option>
+                    <option value="fullstack">Full Stack Development</option>
+                </select>
+    
+                <label for="availability">Availability:</label>
+                <select id="availability">
+                    <option value="" selected disabled style="color: rgb(135, 134, 134);">Select availability</option>
+                    <!-- Options will be populated dynamically via JavaScript -->
+                </select>
+    
+                <label for="rating">Rating:</label>
+                <select id="rating">
+                    <option value="" selected disabled style="color: rgb(126, 126, 126);">Select rating</option>
+                    <!-- Options will be populated dynamically via JavaScript -->
+                </select>
+    
+                <input type="reset" value="Clear" class="reset">
+            </form>
+        
+            <!-- Tutors List Section -->
+            <div class="tutor-list">
+                <!-- Tutor Card 1 -->
+                <div class="tutor-card" data-specialization="frontend" data-rating="4.9" data-availability="2024-10-22">
+                    <img src="teacher.png" alt="Juan Dela Cruz">
+                    <h3>Juan Dela Cruz</h3>
+                    <p>Expertise: Frontend Development</p>
+                    <p>Rating: ★★★★★ (4.9/5)</p>
+                    <button>View Profile</button>
+                </div>
+        
+                <!-- Tutor Card 2 -->
+                <div class="tutor-card" data-specialization="frontend" data-rating="4.9" data-availability="2024-10-23">
+                    <img src="teacher.png" alt="Carl Morales">
+                    <h3>Carl Morales</h3>
+                    <p>Expertise: Frontend Development</p>
+                    <p>Rating: ★★★★★ (4.9/5)</p>
+                    <button>View Profile</button>
+                </div>
+        
+                <!-- Tutor Card 3 -->
+                <div class="tutor-card" data-specialization="frontend" data-rating="4.9" data-availability="2024-10-24">
+                    <img src="teacher.png" alt="John Sins">
+                    <h3>John Sins</h3>
+                    <p>Expertise: Frontend Development</p>
+                    <p>Rating: ★★★★★ (4.9/5)</p>
+                    <button>View Profile</button>
+                </div>
+        
+                <!-- Tutor Card 4 -->
+                <div class="tutor-card" data-specialization="backend" data-rating="4.8" data-availability="2024-10-12">
+                    <img src="teacher (1).png" alt="Ana Santos">
+                    <h3>Ana Santos</h3>
+                    <p>Expertise: Backend Development</p>
+                    <p>Rating: ★★★★★ (4.8/5)</p>
+                    <button>View Profile</button>
+                </div>
+                <div class="tutor-card" data-specialization="backend" data-rating="4.8" data-availability="2024-10-12">
+                    <img src="teacher.png" alt="Ana Santos">
+                    <h3>Jerico Rosales</h3>
+                    <p>Expertise: Backend Development</p>
+                    <p>Rating: ★★★★★ (4.8/5)</p>
+                    <button>View Profile</button>
+                </div>
+                <div class="tutor-card" data-specialization="backend" data-rating="4.8" data-availability="2024-10-12">
+                    <img src="teacher (1).png" alt="Ana Santos">
+                    <h3>Jessa Quirino</h3>
+                    <p>Expertise: Backend Development</p>
+                    <p>Rating: ★★★★★ (4.8/5)</p>
+                    <button>View Profile</button>
+                </div>
+        
+                <!-- Tutor Card 5 -->
+                <div class="tutor-card" data-specialization="fullstack" data-rating="4.9" data-availability="2024-11-05">
+                    <img src="teacher.png" alt="David Santos">
+                    <h3>David Santos</h3>
+                    <p>Expertise: Full Stack Development</p>
+                    <p>Rating: ★★★★★ (4.9/5)</p>
+                    <button>View Profile</button>
+                </div>
+                <div class="tutor-card" data-specialization="fullstack" data-rating="4.9" data-availability="2024-11-05">
+                    <img src="teacher.png" alt="David Santos">
+                    <h3>Jansen Dela Rosa</h3>
+                    <p>Expertise: Full Stack Development</p>
+                    <p>Rating: ★★★★★ (4.9/5)</p>
+                    <button>View Profile</button>
+                </div>
+                <div class="tutor-card" data-specialization="fullstack" data-rating="4.9" data-availability="2024-11-05">
+                    <img src="teacher.png" alt="David Santos">
+                    <h3>Carlo Manalo</h3>
+                    <p>Expertise: Full Stack Development</p>
+                    <p>Rating: ★★★★★ (4.9/5)</p>
+                    <button>View Profile</button>
+                </div>
+        
+        
+                <!-- More tutors can be added similarly -->
+            </div>
+        </section>
+        <script>
+            // Sample tutor data
+            const tutors = [
+                {
+                    name: "Juan Dela Cruz",
+                    specialization: "frontend",
+                    rating: 4.9,
+                    availability: "2024-10-22"
+                },
+                {
+                    name: "Carl Morales",
+                    specialization: "frontend",
+                    rating: 4.9,
+                    availability: "2024-10-23"
+                },
+                {
+                    name: "John Sins",
+                    specialization: "frontend",
+                    rating: 4.9,
+                    availability: "2024-10-24"
+                },
+                {
+                    name: "Ana Santos",
+                    specialization: "backend",
+                    rating: 4.8,
+                    availability: "2024-10-12"
+                },
+                {
+                    name: "David Santos",
+                    specialization: "fullstack",
+                    rating: 3.9,
+                    availability: "2024-11-05"
+                },
+                {
+                    name: "Jansen Dela Rosa",
+                    specialization: "fullstack",
+                    rating: 3.9,
+                    availability: "2024-11-05"
+                },
+                {
+                    name: "Carlo Manalo",
+                    specialization: "fullstack",
+                    rating: 3.9,
+                    availability: "2024-11-05"
+                },
+
+            ];
+        
+            // Select filter elements
+            const specializationFilter = document.getElementById('specialization');
+            const ratingFilter = document.getElementById('rating');
+            const availabilityFilter = document.getElementById('availability');
+            
+            // Select all tutor cards
+            const tutorCards = document.querySelectorAll('.tutor-card');
+        
+            // Function to update availability and rating filters based on specialization
+            function updateFilters() {
+                const selectedSpecialization = specializationFilter.value;
+        
+                // Get tutors matching the selected specialization
+                const filteredTutors = tutors.filter(tutor => tutor.specialization === selectedSpecialization);
+        
+                // Get unique availability and rating options from the filtered tutors
+                const uniqueAvailability = [...new Set(filteredTutors.map(tutor => tutor.availability))];
+                const uniqueRatings = [...new Set(filteredTutors.map(tutor => tutor.rating))];
+        
+                // Update availability filter
+                availabilityFilter.innerHTML = '<option value="" disabled selected>Select availability</option>';
+                uniqueAvailability.forEach(date => {
+                    const option = document.createElement('option');
+                    option.value = date;
+                    option.textContent = date;
+                    availabilityFilter.appendChild(option);
+                });
+        
+                // Update rating filter
+                ratingFilter.innerHTML = '<option value="" disabled selected>Select rating</option>';
+                uniqueRatings.forEach(rating => {
+                    const option = document.createElement('option');
+                    option.value = rating;
+                    option.textContent = `${rating} Stars & Above`;
+                    ratingFilter.appendChild(option);
+                });
+            }
+        
+            // Function to filter tutor cards based on all selected filters
+            function filterTutors() {
+                const specialization = specializationFilter.value;
+                const rating = parseFloat(ratingFilter.value) || 0;
+                const availability = availabilityFilter.value;
+        
+                // Loop through each tutor card
+                tutorCards.forEach(card => {
+                    // Get the data attributes from each card
+                    const tutorSpecialization = card.getAttribute('data-specialization');
+                    const tutorRating = parseFloat(card.getAttribute('data-rating'));
+                    const tutorAvailability = card.getAttribute('data-availability');
+        
+                    // Check if the tutor matches the filters
+                    const matchesSpecialization = specialization === '' || specialization === tutorSpecialization;
+                    const matchesRating = rating === 0 || tutorRating >= rating;
+                    const matchesAvailability = availability === '' || tutorAvailability === availability;
+        
+                    // Show or hide tutor card based on filters
+                    if (matchesSpecialization && matchesRating && matchesAvailability) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            }
+        
+            // Attach event listeners to filters
+            specializationFilter.addEventListener('change', () => {
+                updateFilters();
+                filterTutors();
+            });
+            ratingFilter.addEventListener('change', filterTutors);
+            availabilityFilter.addEventListener('input', filterTutors);
+        </script>
+        
+    
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <h2>Need Help Finding the Right Tutor?</h2>
+            <p>Contact us, and we’ll match you with the perfect tutor for your needs.</p>
+            <a href="contactus.html"><button>Get Assistance</button></a>
+        </section>
+    </section>
+    
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Tutors</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="linkedin-big-logo.png" alt="LinkedIn"></a></li>
+                    <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="github.png" alt="GitHub"></a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: info@codebegin.com</p>
+                <p>Phone: +63 912 345 6789</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Codebegin. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
