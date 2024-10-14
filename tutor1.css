@@ -3,16 +3,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
 }
 body{
     background-color: rgb(96, 96, 174);
-
 }
 header{
     background-color: rgb(27, 67, 154);
-    font-family: "Poppins", system-ui;
-    font-weight: 700;
     color: white;
     max-height: 100%;
     max-width: 100%;
@@ -20,12 +18,16 @@ header{
 }
 header .logo{
     font-size: xx-large;
+    margin-right: 20%;
+}
+nav{
+    display: flex;
+    align-items: center;
 }
 nav ul{
     display: flex; 
     list-style: none;
     gap: 30px;
-    
 }
 li a{
     text-decoration: none;
@@ -35,15 +37,19 @@ li a:hover{
     color: aqua;
     cursor: grab;
 }
+.userlogo img{
+    width: 50px;
+    height: 50px;
+    margin-left: 50%;
+}
 .container{
     display: flex; 
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 .courses{
     border-bottom: 5px solid #007bff;
 }
-
 /* General Section Styling */
 .tutors-section {
     width: 80%;
@@ -152,7 +158,6 @@ header p {
     margin-bottom: 30px;
     font-size: 28px;
 }
-
 .filters{
     display: flex;
     justify-content: space-evenly;

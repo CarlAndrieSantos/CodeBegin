@@ -37,10 +37,9 @@ li a:hover{
     color: aqua;
     cursor: grab;
 }
-.userlogo img{
-    width: 50px;
-    height: 50px;
-    margin-left: 50%;
+.userlogo a{
+    color: white;
+    text-decoration: none;
 }
 .courses{
     border-bottom: 5px solid #007bff;
@@ -72,14 +71,13 @@ li a:hover{
     list-style: none;
     color: black;
 }
-.course-content{
+/* Course Detail Page */
+.course-detail{
     padding: 1rem;
 }
-.learning-outcomes li{
+
+.course-list1 li{
     list-style: none;
-}
-.learning-outcomes{
-    padding-top: 5%;
 }
 .course-list1 li a{
     text-decoration: none;
@@ -90,32 +88,32 @@ li a:hover{
     padding: .5rem;
     border-radius: .5rem;
     transition: background-color 0.3s;
-
 }
 .course-list1 li a:hover{
     background-color: #0056b3;
 }
-.course-subtitle{
+.course-detail p{
     font-weight: 300;
-    padding-bottom: 1rem;
+}
+.CoursE-Overview{
+    display: flex;
+    align-items: center;
 }
 .course-image img{
-    width: 250px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
 }
-.course-overview{
-    display: flex;
-    padding-top: 5%;
-}
-.course-info p{
-    font-weight: 300;
-}
-.learn-list{
+.course-curriculum{
     padding-bottom: 1rem;
 }
-.learn-list li{
+.course-curriculum h3{
+    font-size: x-large;
+} 
+.course-curriculum ul li{
+    list-style: none;
     font-weight: 300;
-    margin-left: 2%;
+    margin-left: 5%;
+    
 }
 .module-grid{
     display: grid;
@@ -139,10 +137,9 @@ li a:hover{
 }
 .course-modules{
     padding-top: 5%;
+    margin-bottom: 1rem;
 }
-.detail-item p{
-    font-weight: 300;
-}
+
 .book-now-button {
     display: inline-block;
     padding: 15px 30px;
@@ -160,9 +157,8 @@ li a:hover{
 .book-now-button:hover {
     background-color: #0056b3;
 }
-.course-details{
-    padding-top: 5%;
-}
+
+
 
 /* Footer Section */
 .footer {

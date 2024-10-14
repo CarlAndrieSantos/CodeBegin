@@ -13,12 +13,13 @@
            <div class="logo">CodeBegin</div>
         <nav>
             <ul>
-                <li><a href="../Homepage/home.html">Home</a></li>
+                <li><a href="home.php">Home</a></li>
                 <li><a href="course.html" >Courses</a></li>
                 <li class="courses"><a href="tutor.html">Tutors</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
-                <li><a href="/Loginsignup/login1.php">Login/Sign up</a></li>
+                <li class="userlogo"><a href="logout.php">Logout</a></li>
             </ul>
+            
         </nav> 
         </div>
     </header>
@@ -72,30 +73,31 @@
         <section class="browse-tutors">
             <h2>Browse All Tutors</h2>
             <!-- Filters (optional) -->
-             
-            <form class="filters">
-                <label for="specialization">Specialization:</label>
-                <select id="specialization">
-                    <option value="" selected disabled style="color: rgb(107, 107, 107);">Select Specialization</option>
-                    <option value="frontend">Frontend Development</option>
-                    <option value="backend">Backend Development</option>
-                    <option value="fullstack">Full Stack Development</option>
-                </select>
-    
-                <label for="availability">Availability:</label>
-                <select id="availability">
-                    <option value="" selected disabled style="color: rgb(135, 134, 134);">Select availability</option>
-                    <!-- Options will be populated dynamically via JavaScript -->
-                </select>
-    
-                <label for="rating">Rating:</label>
-                <select id="rating">
-                    <option value="" selected disabled style="color: rgb(126, 126, 126);">Select rating</option>
-                    <!-- Options will be populated dynamically via JavaScript -->
-                </select>
-    
-                <input type="reset" value="Clear" class="reset">
-            </form>
+            
+                <form class="filters">
+                    <label for="specialization">Specialization:</label>
+                    <select id="specialization">
+                        <option value="" selected disabled style="color: rgb(107, 107, 107);">Select Specialization</option>
+                        <option value="frontend">Frontend Development</option>
+                        <option value="backend">Backend Development</option>
+                        <option value="fullstack">Full Stack Development</option>
+                    </select>
+        
+                    <label for="availability">Availability:</label>
+                    <select id="availability">
+                        <option value="" selected disabled style="color: rgb(135, 134, 134);">Select availability</option>
+                        <!-- Options will be populated dynamically via JavaScript -->
+                    </select>
+        
+                    <label for="rating">Rating:</label>
+                    <select id="rating">
+                        <option value="" selected disabled style="color: rgb(126, 126, 126);">Select rating</option>
+                        <!-- Options will be populated dynamically via JavaScript -->
+                    </select>
+        
+                    <input type="reset" value="Clear" class="reset">
+                </form>
+            
         
             <!-- Tutors List Section -->
             <div class="tutor-list">
@@ -118,7 +120,7 @@
                 </div>
         
                 <!-- Tutor Card 3 -->
-                <div class="tutor-card" data-specialization="frontend" data-rating="4.9" data-availability="2024-10-24">
+                <div class="tutor-card" data-specialization="frontend" data-rating="" data-availability="2024-10-24">
                     <img src="teacher.png" alt="John Sins">
                     <h3>John Sins</h3>
                     <p>Expertise: Frontend Development</p>

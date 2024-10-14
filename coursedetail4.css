@@ -18,28 +18,37 @@ header{
 }
 header .logo{
     font-size: xx-large;
+    margin-right: 20%;
 }
-.nav ul{
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul{
     display: flex; 
     list-style: none;
-    gap: 30px;        
+    gap: 30px;
 }
-.nav ul li a{
+li a{
     text-decoration: none;
-    color: rgb(255, 255, 255);   
+    color: white;
 }
 li a:hover{
     color: aqua;
     cursor: grab;
 }
-.container{
-    display: flex; 
-    justify-content: space-around;
-    align-items: center;
-    
+.userlogo img{
+    width: 50px;
+    height: 50px;
+    margin-left: 50%;
 }
 .courses{
     border-bottom: 5px solid #007bff;
+}
+.container{
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
 }
 /*side bar*/
 .main-container{
